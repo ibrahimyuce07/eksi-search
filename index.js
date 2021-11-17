@@ -9,13 +9,13 @@ eksiSearchAdvanced = function (word) {
 };
 
 chrome.contextMenus.create({
-  title: "hizli ara [baslik]",
+  title: "hızlı ara [başlık]",
   contexts: ["selection"],
   onclick: eksiSearch
 });
 
 chrome.contextMenus.create({
-  title: "hayvan ara [gelismis]",
+  title: "hayvan ara [gelişmiş]",
   contexts: ["selection"],
   onclick: eksiSearchAdvanced
 });

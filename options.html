@@ -1,35 +1,12 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Options</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-    <div class="options">
-        <h2>Secenekler</h2>
-
-        <input type="radio" name="option" value="newtab" id="newtab" checked onclick="window.open('index.html')">
-        <label for="newtab">Yeni sekmede ac</label><br>
-        <input type="radio" name="option" value="newwindow" id="newwindow" onclick="saveOptions()">
-        <label for="newwindow">Yeni pencerede ac</label><br>
-        <input type="radio" name="option" value="popup" id="popup" onclick="saveOptions()">
-        <label for="popup">Pop-up olarak ac</label><br><br>
-
-        <script>
-            function saveOptions() {
-                var option = document.querySelector('input[name="option"]:checked').value;
-                console.log(option);
-                //save to local storage
-                localStorage.setItem("option", option);
-                //close options window
-                console.log("option: " + option);
-                alert("option: " + option);
-            }
     
-        </script>
-    </div>
-  
 </body>
-
 </html>
